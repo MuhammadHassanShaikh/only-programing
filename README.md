@@ -71,7 +71,7 @@ class A
 
 
 
-                                    // 5 SUM OF FIRST NATURAL NO
+                                    // 5 SUM OF FIRST NATURAL NOo
 import java.util.Scanner;
 class A
 {
