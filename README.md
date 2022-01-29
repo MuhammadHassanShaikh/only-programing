@@ -1912,3 +1912,747 @@ class A
         }
     }
 }
+
+
+
+                                                               //  75  STATIC VS NON STATIC METHOD
+class A
+{
+    public static void main(String[] args)
+    {
+        int a=10;
+        static int b=20;
+        public static void main(String[] args)
+        {
+            A r=new A();
+            r.Disp();
+            A.Show;
+
+        }   
+        static void Show()
+        {
+            System.out.print(a+" "+b);
+        } 
+        void Disp()
+        {
+            System.out.print(a+" "+b);
+        }
+    }
+}
+
+
+
+                                                                //  75  PART(2) STATIC VS NON STATIC METHOD
+class A
+{
+    public static void main(String[] args)
+    {
+        int a=10;
+        static int b=20;
+        public static void main(String[] args)
+        {
+            A r=new A();
+            r.Disp();
+            A.Show;
+
+        }   
+        static void Show()
+        {
+            System.out.print("Show() "+b);
+        } 
+        void Disp()
+        {
+            System.out.print("Disp() "+a+" "+b);
+        }
+    }
+}
+
+
+
+                                                                //  76  HOW TO USE METHOD IN JAVA
+import java.util.Scanner;
+class A
+{
+    int n1,n2;
+    public static void main(String[] args)
+    {
+        Fun ref=new Fun();
+        ref.input();
+        ref.process();
+        ref.output();
+    }
+    void input()
+    {
+        Scanner r=new Scanner(System.in);
+        System.out.print("Enter two no: ");
+        n1=r.nextInt();
+        n2=r.nextInt();
+    }
+    void process()
+    {
+        add=n1+n2;
+        sub=n1-n2;
+        multi=n1*n2;
+        div=n1/n2;
+        rem=n1%n2;
+    }
+    void output()
+    {
+        System.out.println("add of two no"+add);
+        System.out.println("sub of two no"+sub);
+        System.out.println("multi of two no"+multi);
+        System.out.println("div of two no"+div);
+        System.out.println("rem of two no"+rem);
+    }
+}
+
+
+
+                                                                //  77  FIND FACTORIAL USING RECURSION
+import java.util.Scanner;
+class A
+{
+    public static void main(String[] args) 
+    {
+        int n;
+        System.out.print("Enter any no");
+        Scanner r=new Scanner(System.in);
+        n=r.nextInt();
+        A obj=new A();
+        int result =obj.fact(n);
+        System.out.print("Factorial of given no"+result);
+        int fact(int n)
+        {
+            if(n==1)
+            return 1;
+            else
+            return  n*fact(n-1);
+        }
+        int fact(int n)
+        {
+            if(n==1)
+            return 1;
+            else
+            return  n*fact(n-1);
+        }    
+        int fact(int n)
+        {
+            if(n==1)
+            return 1;
+            else
+            return  n*fact(n-1);
+        }
+    }
+}
+
+
+
+                                                                    //  78 COMPARE TWO STRING
+class A
+{
+    public static void main(String[] args)
+    {
+        String a="Loin";
+        String b="Tiger";
+        if(a==b)
+        {
+            System.out.print("True");
+        }
+        else()
+        {
+            subjects.out.print("False");
+        }
+
+    }
+}
+
+
+
+                                                                    //  78  PART 2 COMPARE TWO STRING
+class A
+{
+    public static void main(String[] args)
+    {
+        String a="Loin";
+        String b=new String"Tiger";
+        if(a==b)
+        {
+            System.out.print("True");
+        }
+        else()
+        {
+            subjects.out.print("False");
+        }
+
+    }
+}
+
+
+
+                                                                    //  78  PART 3 COMPARE TWO STRING
+class A
+{
+    public static void main(String[] args)
+    {
+        String a="Loin";
+        String b=new String("Tiger");
+        if(a.equals(b))
+        {
+            System.out.print("True");
+        }
+        else()
+        {
+            subjects.out.print("False");
+        }
+
+    }
+}
+
+
+
+                                                                    //  78  PART 4 COMPARE TWO STRING
+class A
+{
+    public static void main(String[] args)
+    {
+        String a=new String("Loin");
+        String b=new String("Tiger"); //or"Loin"
+        if(a.equals(b))
+        {
+            System.out.print("True");
+        }
+        else()
+        {
+            subjects.out.print("False");
+        }
+
+    }
+}
+
+
+
+                                                                    //  79  STRING METHOD IN JAVA
+class A
+{
+    public static void main(String[] args)
+    {
+        String a="abc";
+        String b="xyz";
+        System.out.println(a.toLowerCase());
+        System.out.println(b.toLowerCase());    
+        System.out.println(b.concat(a));
+        System.out.println(b.lenght());
+        String c="      Hassan      ";
+        String d="";//"learn";
+        System.out.println(c.trim());//or only c no trim write
+        System.out.println(d.isEmpty());
+        System.out.println(b.charAt(2));
+        System.out.println(a.indexOf('k'));
+        System.out.println(b.equals(a));
+        System.out.println(d.replace('r','e'));// 'r','e' kam jab karaiga jab string d main learn likha hoga abhi wo comment main hai
+    }
+}
+
+
+
+                                                                  //  80 PART 1  REVERSE A STRING WITH STRING BUFFER & STRING BUILDER CLASS IN JAVA
+class A
+{
+    public static void main(String[] args)
+    {
+        StringBuffer r=new StringBuffer("Leran Coding");
+        System.out.println(r.revese());
+        
+        StringBuilder r=new StringBuilder("Java Coding");
+        System.out.println(ref.reverse());
+    }
+}
+
+
+
+                                                                 //  80 PART 2  REVERSE A STRING WITH STRING BUFFER & STRING BUILDER CLASS IN JAVA
+class A
+{
+    public static void main(String[] args)
+    {
+        int l,i;
+        String r="Learn Coding";
+        String r2="a";
+        l=r.lenght();
+        for(i=l-1;i>=0;i--)
+        {
+            r=r2+r.charAt(i);
+        }
+        System.out.println(r2);
+    }
+}
+
+
+
+                                                                 //  81  CONSTRUCTOR OVERLOADING IN JAVA
+class A
+{
+        int a; double b; String c;
+        A()
+        {
+            a=100; b=45.32; c="Hassan";
+        }
+        A(int x)
+        {
+            a=x;
+        }
+        A(double y, String z)
+        {
+            b=y; c=z;
+        }
+}
+class B
+{
+    public static void main(String[] args)
+    {
+        A r=new A();
+        A r2=new A(10);
+        A r3=new A(23.89,"Ankush");
+        System.out.println(r.a+" "+r.b+" "+r.c);
+        System.out.println(r2.a);
+        System.out.println(r3.b+" "+r3.c);    
+    }
+}
+
+
+
+                                                                  //  81 PART 2 CONSTRUCTOR OVERLOADING
+class A
+{
+    int a; double c; String c;
+    private A()
+    {
+        a=1050; b=4.32; c="Hassan";
+    }
+    A(int x)
+    {
+        a=x;
+    }
+    A(double y, String z)
+    {
+        b=y; c=z;
+    }
+    public static void main(String[] args)
+    {
+        A r=new A();
+        A r2=new A(10);
+        A r3=new A(23.89,"Ankush");
+        System.out.println(r.a+" "+r.b+" "+r.c);
+        System.out.println(r2.a);
+        System.out.println(r3.b+" "+r3.c);    
+    }
+}
+
+
+
+                                                                    // PART 1  82  ABSTRACT CLASS
+abstract class animal
+{
+    public abstract void sound();
+}
+class Dog extend animal
+{
+    public void sound()
+    {
+        System.out.println("Dog is Barking");
+    }
+}
+class Loin extend animal
+{
+    public void sound()
+    {
+        System.out.println("Loin is Roar");
+    }
+}
+class Test
+{
+    public static void main(String[] args)
+    {
+        Dog d=new Dog();
+        Loin l=new Loin();
+        d.sound(); l.sound();    
+    }
+}
+
+
+
+                                                                    // PART 2  82  ABSTRACT CLASS
+abstract class animal
+{
+    animal()
+    {
+        System.out.println("All animal");
+    }
+    public abstract void sound();
+}
+class Dog extend animal
+{
+    Dog()
+    {
+        super();
+    }
+    public void sound()
+    {
+        System.out.println("Dog is Barking");
+    }
+}
+class Loin extend animal
+{
+    Loin()
+    {
+        super();
+    }
+    public void sound()
+    {
+        System.out.println("Loin is Roar");
+    }
+}
+class Test
+{
+    public static void main(String[] args)
+    {
+        Dog d=new Dog();
+        Loin l=new Loin();
+        d.sound(); l.sound();    
+    }
+}
+
+
+
+                                                                    // 83  WHY INTERFACE VARIABLES ARE PUBLIC STATIC AND FINAL NI JAVA
+interface  customreRaj
+{
+    int amt=5;
+    void purchase();//public + abstract
+}
+class sellarSanju implements customreRaj
+{
+    @override
+    public void purchase()
+    {
+        //amt=5 final
+        System.out.println("Raj need "+amt+" kg rice");
+    }
+}
+class check
+{
+    public static void main(String[] args)
+    {
+        customreRaj c=new sellarSanju();
+        c.purchase();
+        System.out.println(customreRaj.amt);//static    
+    }
+}
+
+
+
+                                                                    //  84  INTERFACE METHOD IN JAVA
+interface Client
+{
+    void webdesign();
+    void webdevelop();
+}
+abstract class RajTech implements Client
+{
+    @override
+    public void webdesign()
+    {
+        System.out.println("Green, TopMenu, Three dot button");
+    }
+}
+class RahulTech extend RajTech
+{
+    @override
+    public void webdevelop()
+    {
+        System.out.println("HTML, CSS,JAVASCRIPT");
+    }
+}
+class check
+{
+    public static void main(String[] args)
+    {
+        RahulTech r=new RahulTech();
+        r.webdesign();
+        r.webdevelop();    
+    }
+}
+
+
+
+                                                                    //  85  EXTENDING INTERFACES
+interface Gill
+{
+    void add
+}
+interface Raj extends Gill
+{
+    void sub();
+}
+class Ankit implements Raj
+{
+    @override
+    public void add
+    {
+        int a=10,b=20,c;
+        c=a+b;
+        System.out.println("Addition "+c);
+    }
+    @override
+    public void sub
+    {
+        int a=10,b=20,c;
+        c=a-b;
+        System.out.println("Subtraction "+c);
+    }
+}
+class Main
+{
+    public static void main(String[] args)
+    {
+        Raj r=new Ankit();
+        r.add(); r.sub();    
+    }
+}
+
+
+
+                                                                    //  86  THROW AND THROWS
+class A
+{
+    void div(int a,int b) throws AirthmeticException
+    {
+        if(b==0)
+        {
+            throw new AirthmeticException();
+        }
+        else
+        {
+            int c=a/b;
+            System.out.println(c);
+        }
+    }
+    public static void main(String[] args)
+    {
+        test t=new test();
+        try
+        {
+            t.div(20,0); 
+        }
+        catch(Exception e)
+        {
+            System.out.println("The value of b is zero");
+        }
+    }
+}
+
+
+
+                                                                    //  87  TRY-CATCH VS THROWS
+class A
+{
+    public static void wait() throws InterruptedException
+    {
+        for(int i=1;i<=10;i++)
+        {
+            System.out.println(i);
+            Thread.sleep(1000);
+        }
+    }
+    public static void main(String[] args)throws InterruptedException
+    {
+        try
+        {
+            wait();
+            System.out.println(10/0);
+        }
+        catch(Exception e)
+        {
+            System.out.println("Exception Handled");
+        }
+        System.out.println("main method ended");
+    }
+}
+
+
+
+                                                                    //  88  USER DEFINED EXCEPTION
+class InvalidAgeException extends Exception
+{
+    InvalidAgeException
+    {
+        System.out.println(msg);
+    }
+}
+class Test
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            vote(20);
+        }
+        catch(Exception e)
+        {
+            System.out.println(e)
+        } 
+    }
+    public static void main(String[] args) throws InvalidAgeException
+    {
+        if(age<18)
+        {
+            throws new InvalidAgeException("Not Eligible for Voting");
+        }
+        else
+        {
+            System.out.println("Eligible for voting");
+        }
+    }
+}
+
+
+
+                                                                    //  89  DISPLAY THE FILE INFORMATION
+import java.io.File;
+class A
+{
+    public static void main(String[] args)
+    {
+        File f=new File("C:\\User\\lenovo\\Desktop\\LC.txt");
+        if(f.exists())
+        {
+            System.out.println("File Name "+f.getName());
+            System.out.println("File Location "+f.getAbsolutePath());
+            System.out.println("File Writeable "+f.canwrite());
+            System.out.println("File Readable "+f.canRead());
+            System.out.println("File Size "+f.lenght());
+            System.out.println("File Removed "+f.delete());
+        }
+        else
+        {
+            System.out.println("File doesn't Exists");
+        } 
+    }
+}
+
+
+
+                                                                    //  90  WRITE INTO A FILE
+import java.io.*;
+class A
+{   
+    public static void main(String[] args)
+    {
+        try
+        {
+            FileWriter f=new FileWriter("C:\\User\\lenove\\Desktop\\LC.txt");
+            try
+            {
+                System.out.println("Java programing is the best language...!");
+            }
+            finally
+            {
+                f.close();
+            }
+            System.out.println("Sucessfully data write in file");
+        }    
+        catch(IOException i)
+        {
+            System.out.println(i);
+        }
+    }
+}
+
+
+
+                                                                    //  91 PART 1  READ A TEXT FROM FILE
+import java.io.*;
+class A
+{
+    public static void main(String[] args)
+    {
+        try
+        {
+            FileReader r=new FileReader("C:\\Users\\lenovo\\Deskto\\LC.txt");
+            try
+            {
+                int i;
+                while((i=r.read()!=-1))
+                {
+                    System.out.println((char)i);
+                }
+            }
+            finally
+            {
+                r.close();
+            }
+        }    
+        catch(IOException e)
+        {
+            System.out.println("Exception Handled...!");
+        }
+    }
+}
+
+
+
+                                                                    //  91 PART 2 READ A TEXT FROM FILE
+import java.io.*;
+class A
+{
+    public static void main(String[] args) 
+    {
+        FileReader r=new FileReader("C:\\Users\\lenoo\\Desktop\\LC.txt");
+        int i;
+        while((i=r.read())!=-1)
+        {
+            System.out.println((char)i);
+        }    
+        r.close();
+    }
+}
+
+
+
+                                                                    //  92  TO RENAME A FILE
+import java.io.File;
+class A
+{
+    public static void main(String[] args)
+    {
+        File f=new File("C:\\Users\\lenove\\Desktop\\Hassan.txt");
+        File f=new File("C:\\Users\\lenove\\Desktop\\Rafay.txt");
+        if(f.exists())
+        {
+            System.out.println(f.renameTo(r));
+        }
+        else
+        {
+            System.out.println("File doesn't exist");
+        }
+    }
+}
+
+
+
+                                                                    //  93  PART 1  COPY CONTENT FROM ONE FILE TO ANOTHER FILE
+import java.io.FileInputStream;// OR import java.io.*;
+class A
+{
+    public static void main(String[] args)
+    {
+        FileInputStream r=new FileInputStream("C:\\Users\\lenovo\\Desktop\\Hassan.txt");
+        FileInputStream r=new FileInputStream("C:\\Users\\lenovo\\Desktop\\Rafay.txt");
+        int i;
+        while((i=r.read())!=-1)
+        {
+            w.write((char)i);
+        }  
+        System.out.println("Data Copied Succesfully");
+    }
+}
