@@ -2656,3 +2656,55 @@ class A
         System.out.println("Data Copied Succesfully");
     }
 }
+
+****************************************************************************FLUTTER DART****************************************************************
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('hassan'),
+        ),
+        body: Center(child: Text('hello')),
+        // floatingActionButton: FloatingActionButton(child: Icon(Icons.add), onPressed: (){},),
+        bottomNavigationBar: BottomNavigationBar(items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.add_chart), label: 'Chart')
+        ],),
+        backgroundColor: Colors.grey,
+        drawer: Drawer(child: Text('text')),
+      ),
+    ),
+  );
+}
+import 'package:flutter/material.dart';
+
+void main()
+{
+  runApp
+  (
+    MaterialApp
+    (
+      debugShowCheckedModeBanner: false,
+      home: Scaffold
+      (
+        appBar: AppBar
+        (
+          title: Text('hassan'),
+        ),
+        body: Center(child: Text('hello')),
+        floatingActionButton: FloatingActionButton(child: Icon(Icons.add), 
+        onPressed: (){},),
+        bottomNavigationBar: BottomNavigationBar(items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home'),
+          BottomNavigationBarItem(icon: Icon(Icons.add_a_photo), label: 'Photo'),
+        ]),
+        backgroundColor: Colors.blueGrey,
+        drawer: Drawer(child: Text('drawer')),
+      ),
+    ),
+  );
+}
