@@ -2481,7 +2481,7 @@ class A
 
 
 
-                                                                    //  88  USER DEFINED EXCEPTION
+//  88  USER DEFINED EXCEPTION
 class InvalidAgeException extends Exception
 {
     InvalidAgeException
@@ -2517,7 +2517,7 @@ class Test
 
 
 
-                                                                    //  89  DISPLAY THE FILE INFORMATION
+//  89  DISPLAY THE FILE INFORMATION
 import java.io.File;
 class A
 {
@@ -2708,3 +2708,88 @@ void main()
     ),
   );
 }
+
+
+
+
+//****************CONTAINER WIDGET PART 2
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('hassan'),
+        ),
+        body: Center(
+          child: Container(
+            child: Text(
+              'hello',
+              style: TextStyle(fontSize: 30),
+            ),
+            // color: Colors.orange,
+            height: 200,
+            width: 200,
+            alignment: Alignment.center,
+            //padding: EdgeInsets.only(top: 20, bottom: 20),
+            // padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+            // margin: EdgeInsets.all(30),
+            // constraints: BoxConstraints(maxHeight: 100, maxWidth: 150),
+            // transform: Matrix4.rotationZ(25.0),
+            // transform: Matrix4.skewX(3.0)..rotateZ(20.0),
+            decoration: BoxDecoration(
+              color: Colors.orange,
+              // border: Border.all(
+              //   color: Colors.black,
+              //   width: 3,
+              //   style: BorderStyle.solid,
+              // )
+              border: Border(
+                top: BorderSide(color: Colors.black, width: 2),
+                bottom: BorderSide(color: Colors.black, width: 4),
+                left: BorderSide(color: Colors.black, width: 4),
+                right: BorderSide(color: Colors.black, width: 4),
+              )
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+
+
+//****************CONTAINER WIDGET PART 1
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: Text('hassan'),
+//         ),
+//         body: Center(
+//           child: Container(
+//             child: Text(
+//               'hello',
+//               style: TextStyle(fontSize: 30),
+//             ),
+//             color: Colors.orange,
+//             // height: 200,
+//             // width: 200,
+//             alignment: Alignment.center,
+//             //padding: EdgeInsets.only(top: 20, bottom: 20),
+//             // padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+//             // margin: EdgeInsets.all(30),
+//             constraints: BoxConstraints(maxHeight: 100, maxWidth: 150),
+//             // transform: Matrix4.rotationZ(25.0),
+//             transform: Matrix4.skewX(3.0)..rotateZ(20.0),
+//           ),
+//         ),
+//       ),
+//     ),
+//   );
+// }
